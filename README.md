@@ -41,4 +41,5 @@ Texas - Dem flip (altough this race is virtually a 50/50 tossup)
 Final Prediction: D - 52 seats, R - 48 seats
 
 Democrats' Ceiling: 54 seats
+
 Republicans' Ceiling: 51 seats
