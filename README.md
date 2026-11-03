@@ -1,10 +1,13 @@
 # Midterm-Election-Project
 
 ## Summary 
-This is a project that aims to predict the outcome of this year's midterm elections. It takes a number of predictor variables and the results of previous election cycles to predict this one. The models will use logistic regression and are coded in Python. All of the data is from RealClearPolitics and their polling archive. 
+This is a project that aims to predict the outcome of this year's midterm elections. It takes a number of predictor variables and the results of previous election cycles to predict this one. The models will use logistic regression and are coded in Python.
 
-## Model 1
-This model was made using a large database of the average polling data of tossup senate elections from 2014 to 2026. Used factors such as polling averages, incumbency advantages, partisan lean, midterm status, and the party of the president to create a logistic regression model. As of 09/04/2026, this model predicts that Democrats will win in 7 of the 9 tossup senate races. According to this model, Republicans are set to win in Iowa and Alaska, but Democrats will win the other 7 tossup races including Texas and Ohio. 
+## Basic Model Methodology 
+This model was made using a large database of the average polling data of tossup senate elections from 2014 to 2026. Used factors such as polling averages, incumbency advantages, partisan lean, midterm status, and the party of the president to create a logistic regression model. This model predicts a 53-47 senate majority for the Democrats. 
 
-## Model 2
-This model aims to create a more comprehensive model with more variables and more importantly time till election. The database for this model will contain every single poll from tossup Senate races from 2018 to determine the winner of this year's election. Importantly, this model will take days till the election into account to see if a party can gain an advantage towards the end of an election cycle. This project will be done by training the 2018 data and then testing the 2020 data. And then train the 2018 and 2020 data and test it on 2022, and so on and so forth. This model is currently a work in progress. 
+## Final Model Methodology 
+This model aims to create a more comprehensive model that takes into account each and every individual poll from 2006 to 2024. It uses the same factors as the basic model, but we are analyzing the data at an individual poll level, rather than the poll averages. The model uses logistic regression on the dataset with all the polls from 2006 to 2024, and then predicts that on all the polls that have come out in the month leading up to the election. Then the probability of winning is averaged out to get a percent chance of the Democrats winning. I've created 6 models in this notebook. One takes the predicted case when it comes to national environment and then a best and worst case for Democrats and Republicans. And then 3 of the models have incumbency factored in and 3 don't since the incumbency advantage is not a great variable to use to predict this year's election since most incumbents are quite unpopular. 
+
+# Final Model Results
+So, the expected model's final prediction is a 52-48 Democratic majority. The ceiling for Democrats is 54 seats, while the ceiling for Republicans is 51 seats.
